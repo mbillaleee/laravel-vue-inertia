@@ -19,7 +19,15 @@ defineProps({
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-10">
                 <div v-for="post in posts" :key="post.id">
 
-                        {{ post }}
+                        <div class="font-samiboald">{{ post.user.name }}</div>
+                        <div class="font-samiboald">{{ post.body }}</div>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-10">
+                <div v-for="post in posts" :key="post.id">
+
+                        <div class="font-samiboald">{{ post.user.name }}</div>
+                        <div class="font-samiboald">{{ post.body }}</div>
                 </div>
             </div>
         </div>
